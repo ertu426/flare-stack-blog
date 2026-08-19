@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "flare-stack-blog",
+  "name": "my-blog",
   "compatibility_date": "2026-02-17",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "main": "./src/server.ts",
@@ -10,14 +10,14 @@
   "keep_vars": true,
   "routes": [
     {
-      "pattern": "2xat.net",
+      "pattern": "www.2xat.net",
       "custom_domain": true
     }
   ],
   "d1_databases": [
     {
       "binding": "DB",
-      "database_id": "my-blog",
+      "database_id": "D1_DATABASE_ID",
       "migrations_dir": "migrations",
       "remote": true
     }
@@ -32,7 +32,7 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "id": "my-blog",
+      "id": "KV_NAMESPACE_ID",
       "remote": true
     },
     {
