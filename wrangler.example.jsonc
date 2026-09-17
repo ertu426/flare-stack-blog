@@ -1,4 +1,5 @@
 // Template for `bun run wrangler:prepare`. Placeholders are replaced from env.
+
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "worker-name-placeholder",
